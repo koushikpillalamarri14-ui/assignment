@@ -1,0 +1,82 @@
+:root {
+  --brand: #6c8bff;
+  --ink: #1a1a2e;
+  --muted: #5b6488;
+  --page-bg: #f4f7ff;
+  --panel: #ffffff;
+  --nav-bg: #eaf0ff;
+  --card-bg: #eef3ff;
+  --card-border: #bfd0ff;
+  --footer-bg: #1a1a2e;
+  --heading: #1d3557;
+  --link: #3e5ef5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: var(--page-bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--heading);
+}
+
+nav {
+  background: var(--nav-bg);
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: var(--link);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+section {
+  background: var(--panel);
+  color: var(--ink);
+  padding: 20px;
+  margin: 0 auto 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.card a {
+  color: var(--link);
+}
+
+footer {
+  background: var(--footer-bg);
+  color: #ffffff;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
